@@ -12,7 +12,7 @@ function phoneticLookup(val) {
     "echo": "Easy",
     "foxtrot": "Frank"
   };
-  result= lookup[val];
+  result = lookup[val];
 
 
   // Only change code above this line
