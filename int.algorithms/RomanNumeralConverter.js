@@ -10,13 +10,12 @@ function convertToRoman(num) {
   var romanNum = '';
   
   for(var i = 0; i < decimals.length; i++) {
-    while(i === num){
-      
+     while (decimals[i] <= num) {
+      romanNum += romans[i];
+      num -= decimals[i];
     }
-     
-      
   }
-  return num;
+  return romanNum;
 }
 
 convertToRoman(36);
