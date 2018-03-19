@@ -5,8 +5,8 @@
 // Return Roman Numeral
 
 function convertToRoman(num) {
-  var romans = ['I','V','X','L','C','D','M'];
-  var decimals = [1, 5, 10, 50, 100, 500, 1000];
+  var romans = ['M','D','C','L','X','V','I'];
+  var decimals = [1000, 500, 100, 50, 10, 5, 1];
   var romanNum = '';
   
   for(var i = 0; i < decimals.length; i++) {
