@@ -5,14 +5,14 @@ function whatIsInAName(collection, source) {
   // Only change code below this line
   var src = Object.keys(source);
    return collection.filter(function (obj) {
-  for (var i = 0; i < src.length; i ++) {
-    if (obj.hasOwnProperty(src[i]) || obj[src[i]] == source[src[i]]) {
-      arr = arr.push(obj.hasOwnProperty(src[i]));
+    for (var i = 0; i < src.length; i ++) {
+    if (!obj.hasOwnProperty(src[i]) || obj[src[i]] !== source[src[i]]) {
+      return false;
     }
-    }
+    } 
    
   // Only change code above this line
-  return arr;
+  return true;
    }) ;
 }
 
